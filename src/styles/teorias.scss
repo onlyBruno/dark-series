@@ -1,0 +1,118 @@
+@use 'variaveis';
+
+.teorias {
+    padding: 5.6vw;
+    
+    &__title {
+        font-size: 3em;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        
+        &__item {
+            list-style: none;
+            border-radius: 4px;
+            margin: 10px;
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
+            
+            &__name {
+                color: variaveis.$corPrincipal;
+                font-size: 1.5em;
+                cursor: pointer;
+                background-color: rgba(255, 0, 0, 0.075);
+                border-radius: 3px;
+                white-space: nowrap;
+                margin-bottom: 20px;
+                text-align: center;
+                position: relative;
+
+            }
+
+            &__content {
+                height: 0;
+                overflow: hidden; // O overflow ela vai dizer se o conteudo deve ser visivel ou nao mesmo que extrapole o boxmodel
+                padding: 0 24px;
+                transition: height, .10s ease;
+                color: white;
+            }
+
+
+            &--is-open {
+            .teorias__content__item__content {
+                height: auto;
+                    padding-bottom: 24px;
+                    transition: height, .10s ease;
+            }
+        }
+            
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .teorias {
+        padding: 5.6vw;
+
+
+        &__title {
+            font-size: 20px;
+        }
+        &__content {
+            justify-content: center;
+            align-items: flex-start;
+            
+            &__item {
+                width: 100%;
+                max-width: 100%; /* Remove a largura máxima */
+                
+
+                &__name {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .teorias {
+        padding: 5.6vw;
+        
+
+        &__title {
+            font-size: 20px;
+        }
+        &__content {
+            justify-content: center;
+            align-items: flex-start;
+            
+            &__item {
+                width: 100%;
+                max-width: 100%; /* Remove a largura máxima */
+                
+
+                &__name {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

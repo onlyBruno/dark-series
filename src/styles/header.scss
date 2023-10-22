@@ -1,0 +1,140 @@
+@use 'variaveis';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+    position: sticky; /* Adicionado */
+    top: 0; /* Posiciona o header no topo da janela */
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: variaveis.$corCabecalho;
+
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; /* Ocupar toda a largura disponível */
+        max-width: 1200px; /* Defina um valor máximo para evitar que fique muito largo */
+        margin: 0 auto; /* Centralizar horizontalmente */
+        
+    }
+
+    &__logo {
+        font-size: 28px;
+        color: variaveis.$corPrincipal;
+        letter-spacing: 20px;
+        margin: 0;
+        
+
+        &:hover {
+            transition: 2s;
+            transform: tranlatex(50px);
+            opacity: 0;
+        }
+    }
+
+    &__link {
+        display: inline-block; /* Alterado para inline-block para ficarem na mesma linha */
+        vertical-align: middle; /* Alinhar verticalmente no centro */
+        list-style: none;
+        margin-left: 10px;
+
+        &__nav {
+            color: variaveis.$corPrincipal;
+            text-decoration: none;
+            margin-left: 10px;
+            letter-spacing: 2px;
+            flex: 1;
+            text-align: center;
+        }
+
+        &__item {
+            list-style: none;
+            margin-left: 10px;
+
+            &__img {
+                max-width: 35px;
+                margin-left: 80px;
+                transition: transform 0.5s;
+
+                &:hover {
+                    animation: rotate-infinite 1s infinite;
+                }
+
+                @keyframes rotate-infinite {
+                    0% {
+                      transform: rotate(0deg); /* Define o início da animação */
+                    }
+                    100% {
+                      transform: rotate(360deg); /* Define o fim da animação */
+                    }
+                }
+                
+            }   
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        animation: none;
+        
+
+        &__container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__logo{
+            display: none;
+
+        }
+
+        &__link {
+            margin-top: 10px;
+            &__item {
+                &__img {
+                display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .header {
+      padding: 5.6vw;
+      height: auto;
+      
+    }
+  
+    .header__container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .header__logo {
+      display: none;
+    }
+  
+    .header__link {
+      margin-top: 10px;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .header__link__item {
+      margin-left: 0;
+    }
+  
+    .header__link__item__img {
+      display: none;
+    }
+}
+  

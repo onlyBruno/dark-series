@@ -1,0 +1,108 @@
+@use 'variaveis';
+
+.sobre {
+    padding: 5.6vw;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+        max-width: 1024px;
+        border-radius: 9px;
+        height: auto;
+        opacity: 0;
+        transform: translate(-50px, 0px);
+        transition: .9s all ease;
+
+        &__text {
+            color: variaveis.$corPrincipal;
+            font-size: 1.5em;
+            letter-spacing: 5px;
+            // overflow: hidden;
+            // border-right: 0.15em solid rgb(255, 255, 255);
+            // animation: escrever 2s steps(40, end);
+
+            &::after {
+                content: '|';
+                margin-left: 5px;
+                opacity: 1;
+                animation:  pisca .7s infinite;
+            }
+        }
+    }
+
+}
+
+.animar {
+    opacity: 1;
+    transform: translate(0);
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .sobre {
+
+        &__container {
+            grid-template-columns: 1fr;
+        }
+        
+        
+        &__item {
+            max-width: 100%;
+
+            &__text {
+                font-size: 15px;
+                flex-wrap: wrap;
+            }
+        }
+
+
+    }
+
+    span:nth-child(2) {
+        img {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .sobre {
+        &__container {
+            grid-template-columns: 1fr; /* Altera para uma única coluna em telas menores */
+            grid-gap: 10px;
+            padding: 7.4vw;
+            justify-content: center;
+        }
+        
+        &__item {
+            max-width: 100%;
+            transform: none;
+            overflow: hidden;
+
+            &__text {
+                font-size: 1.2em;
+                letter-spacing: 2px;
+                word-wrap: break-word;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .sobre__container > span:nth-child(2) {
+        display: none; /* Oculta a imagem do segundo span em telas menores */
+    }
+}

@@ -1,5 +1,17 @@
-$bgColor: red;
+@use 'variaveis';
+@use 'header';
+@use 'logo';
+@use 'sobre';
+@use 'personagens';
+@use 'teorias';
+
+html {
+  font-family: 'Ysabeau', sans-serif;
+}
 
 body {
-    background-color: $bgColor;
+    background-image: url(/dist/images/fundo/fundo.jpg); 
+    overflow-x: hidden;
+    background-size: cover;
 }
+

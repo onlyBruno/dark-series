@@ -1,12 +1,366 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>]
-    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Dark</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">DAЯK</h1>
+                <ul>
+                    <li class="header__link">
+                        <a class="header__link__nav" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="header__link">
+                        <a class="header__link__nav" href="#personagens">Personagens</a>
+                    </li>
+                    <li class="header__link">
+                        <a class="header__link__nav" href="#teorias">Teorias</a>
+                    </li>
+                    <li class="header__link"> 
+                        <a class="header__link__item" href="#">
+                            <img class="header__link__item__img" src="./dist/images/logos/sicmunduscreatus.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    </header>
+    <section class="logo__dark">
+        <h1>
+            <img class="logo__dark__item" src="./dist/images/logos/sic-mundus-creatus-est.png" alt="">
+        </h1>
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="sobre__container">
+            <span>
+                <img class="sobre__item" src="./dist/images/fundo/fundo1.jpg" alt="">
+                <p class="sobre__item__text">
+                    Dark é uma série alemã de suspense e ficção científica que se passa na cidade de Winden. Após o desaparecimento de uma criança, segredos sombrios começam a ser revelados, revelando uma complexa teia de conexões entre quatro famílias. A série aborda a viagem no tempo, mostrando como os personagens podem interagir com versões mais jovens e mais velhas de si mesmos. Ao longo da trama, o ciclo temporal infinito é explorado, revelando que eventos passados, presentes e futuros estão entrelaçados. Dark mergulha em temas como livre arbítrio e determinismo, enquanto os personagens lutam para quebrar o ciclo de repetição. A narrativa é complexa e requer atenção aos detalhes, com uma atmosfera sombria e uma trilha sonora arrepiante. A série foi elogiada por sua história envolvente, personagens complexos e conclusão satisfatória, sendo considerada uma das melhores produções televisivas dos últimos anos.
+                </p>
+            </span>
+            <span>
+            <img class="sobre__item" src="./dist/images/logos/datas.png" alt="">
+            </span>
+        </div>
+    </section>
+    <section class="personagens" id="personagens">
+        <h1>Personagens</h1>
+        <nav class="personagens__tabs">
+            <button data-tab-button="2019" class="personagens__tabs__button ">
+                2019
+            </button>
+            <button data-tab-button="1986" class="personagens__tabs__button ">
+                1986
+            </button>
+            <button data-tab-button="1953" class="personagens__tabs__button">
+                1953
+            </button>
+            <button data-tab-button="1921" class="personagens__tabs__button">
+                1921
+            </button>
+            <button data-tab-button="2052" class="personagens__tabs__button">
+                2052
+            </button>
+        </nav>
+        <ul data-tab-id="1921" class="personagens__list">
+            <li class="personagens__list__item">
+                <a href="#jonas">
+                    <img src="./dist/images/personagens/jonas1921.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">Adam ( Jonas Kahnwald )
+                </div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#magnus">
+                    <img src="./dist/images/personagens/magnus1921.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">Magnus Nielsen</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#francisca">
+                    <img src="./dist/images/personagens/francisca__1921.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">FRANCISCA KAHNWALD</div>
+            </li>
+        </ul>
+        <ul data-tab-id="2019" class="personagens__list">
+            <li class="personagens__list__item">
+                <a href="#jonas">
+                    <img src="./dist/images/personagens/jonas2019.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">JONAS KAHNWALD</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#magnus">
+                    <img src="./dist/images/personagens/magnus2019.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">MAGNUS NIELSEN</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#mikkel">
+                    <img src="./dist/images/personagens/Mikkel2019.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">MIKKEL Nielsen</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#ulrich">
+                    <img src="./dist/images/personagens/urich2019.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">ULRICH NIELSEN</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#">
+                    <img src="./dist/images/personagens/Ines2019.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">INES KAHNWALD</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#helge">
+                    <img src="./dist/images/personagens/helge2019.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">HELGE DOPPLER</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#elisabeth">
+                    <img src="./dist/images/personagens/lisa2019.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">ELISABETH  DOPPLER</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#">
+                    <img src="./dist/images/personagens/tronte2019.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">TRONTE NIELSEN</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#claudia">
+                    <img src="./dist/images/personagens/claudia2019.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">CLAUDIA TIEDEMANN</div>
+            </li>
+        </ul>
+        <ul data-tab-id="1986" class="personagens__list">
+            <li class="personagens__list__item">
+                <a href="#claudia">
+                    <img src="./dist/images/personagens/claudia1986.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">CLAUDIA TIEDEMANN</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#">
+                    <img src="./dist/images/personagens/Ines1986.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">INES KAHNWALD</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#helge">
+                    <img src="./dist/images/personagens/helge1986.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">HELGE DOPPLER</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#mikkel">
+                    <img src="./dist/images/personagens/mikkel1986.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">MIKKEL Nielsen</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#">
+                    <img src="./dist/images/personagens/tronte1986.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">TRONTE NIELSEN</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#ulrich">
+                    <img src="./dist/images/personagens/urich1986.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">ULRICH NIELSEN</div>
+            </li>
+        </ul>
+        <ul data-tab-id="1953" class="personagens__list">
+            <li class="personagens__list__item">
+                <a href="#claudia">
+                    <img src="./dist/images/personagens/claudia1953.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">CLAUDIA TIEDEMANN</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#helge">
+                    <img src="./dist/images/personagens/helge1953.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">HELGE DOPPLER</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#">
+                    <img src="./dist/images/personagens/Ines1953.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">INES KAHNWALD</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#">
+                    <img src="./dist/images/personagens/tronte1953.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">TRONTE NIELSEN</div>
+            </li>
+        </ul>
+        <ul data-tab-id="2052" class="personagens__list">
+            <li class="personagens__list__item">
+                <a href="#jonas">
+                    <img src="./dist/images/personagens/jonas2052.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">JONAS KAHNWALD</div>
+            </li>
+            <li class="personagens__list__item">
+                <a href="#elisabeth">
+                    <img src="./dist/images/personagens/lisa2052.jpg" alt="">
+                </a>
+                <div class="personagens__list__item__text">ELISABETH  DOPPLER</div>
+            </li>
+        </ul>
+        <section class="personagens__sobre" id="jonas">
+            <section class="personagens__sobre__jonas" >
+                <h1>Jonas Kahnwald</h1>
+                <ul class="personagens__sobre__jonas__content">
+                    
+                <img class="personagens__sobre__jonas__content__img" src="./dist/images/personagens/jonas_sobre.jpg" alt="">
+                <p class="personagens__sobre__jonas__content__text">De diversas formas, Jonas Kahnwald é o ponto de convergência das várias tramas de Dark. Devastado pelo suicídio de de seu pai Michael, o garoto luta para reconstruir sua vida ao lado de sua mãe Hannah. As coisas vão relativamente bem na escola e com os amigos até o desaparecimento de Mikkel Nielsen, o irmão mais novo de sua amiga (e interesse amoroso) Martha. Acontece que os dois eventos estão conectados e revelam a primeira etapa das viagens no tempo que tornaram a série tão famosa.
+                    Conforme avança em sua investigação a respeito das viagens no tempo, Jonas conhece o Desconhecido, um homem vindo do futuro que acaba se revelando sua versão mais velha que dedicou a vida a encerrar o ciclo de catástrofes criados pelos saltos temporais. O que nenhuma das versões de Jonas sabia é que seu destino era se tornar Adam, o líder da Sic Mundus, organização de viajantes no tempo que tem como objetivo causar o apocalipse e destruir o mundo como conhecemos para dar origem a um novo em que as regras cronológicas não se aplicam.
+                    
+                    A versão jovem de Jonas é interpretada por Louis Hofmann, enquanto o Desconhecido é vivido por Andreas Pietschmann. Por fim, o maligno Adam é interpretado por Dietrich Hollinderbäumer.</p>
+                </ul>
+            </section>
+            <section class="personagens__sobre__hanna" id="hanna">
+                <h1>Hanna Kahnwald</h1>
+                <ul class="personagens__sobre__hanna__content">
+                    
+                    <p class="personagens__sobre__hanna__content__text">Desde criança, Hannah Kahnwald se mostrou inteligente na mesma medida em que ardilosa. Sempre apaixonada por Ulrich Nielsen, ela dedicou vários momentos de sua vida para tentar conquistá-lo. Primeiro, quando muito jovem, enquanto o rapaz engatava um namoro com sua futura esposa Katharina. Deixada de lado, ela voltou sua atenção a Michael, misterioso garoto que acabara de chegar à cidade e que viria a se tornar seu marido e o pai do seu filho, Jonas. Adulta, Hannah se tornou massagista da cidade, uma profissão útil para exercer uma série de chantagens a grandes figuras da cidade, como o rico empresário Aleksander Tiedemann.
+
+                        Sua versão infantil é vivida por Ella Lee, já a Hannah adulta é interpretada por Maja Schöne.</p>
+                        <img class="personagens__sobre__hanna__content__img" src="./dist/images/personagens/hanna__sobre.jpg" alt="">
+                    </ul>
+            </section>
+            <section class="personagens__sobre__ulrich" id="ulrich">
+                <h1>ulrich Nielsen</h1>
+                <ul class="personagens__sobre__ulrich__content">
+                    <img class="personagens__sobre__ulrich__content__img" src="./dist/images/personagens/ulrich__sobre.jpg" alt="">
+                    <p class="personagens__sobre__ulrich__content__text">Ulrich Nielsen sempre foi o que se pode chamar de garoto problema. Nos anos 1980, durante a juventude rebelde se tornou motivo de preocupação para a polícia de Widen, especialmente por uma grande revolta causada pelo desaparecimento de seu irmão Mads. Curiosamente, ele cresce e se torna um grande policial local, encarregado de investigar o sumiço do jovem Erik Obendorf e depois de seu filho caçula Mikkel. Conforme avança em sua busca, ele acaba entrando em contato com a viagem no tempo, ficando preso na década de 1950, onde cumpre prisão perpétua.
+
+                        A versão jovem de Ulrich é vivida por Ludger Bökelmann, enquanto Oliver Masucci e Winfried Glatzeder vivem, respectivamente, suas versões adulta e idosa.</p>
+                    </ul>
+            </section>
+            <section class="personagens__sobre__magnus" id="magnus">
+                <h1>magnus Nielsen</h1>
+                <ul class="personagens__sobre__magnus__content">
+                    
+                    <p class="personagens__sobre__magnus__content__text">Magnus é o filho mais velho dos Nielsen. Irresponsável e relaxado, ele se importa mais com farrear do que com seus estudos. As coisas parecem mudar com o desaparecimento de Mikkel, quando passa a se fazer mais presente para sua família e amigos, possibilitando o início de um romance com Franziska Doppler. Surpreendentemente, é possível ver uma versão adulta de Magnus como membro dos Sic Mundus, organização de viajantes do tempo que tem como grande objetivo causar o apocalipse.
+
+                        A versão jovem é interpretada por Moritz Jahn, enquanto o Magnus adulto é vivido por Wolfram Koch.</p>
+                        <img class="personagens__sobre__magnus__content__img" src="./dist/images/personagens/magnus__sobre.jpg" alt="">
+                    </ul>
+            </section>
+            <section class="personagens__sobre__francisca" id="francisca">
+                <h1>francisca Doppler</h1>
+                <ul class="personagens__sobre__francisca__content">
+                    <img class="personagens__sobre__francisca__content__img" src="./dist/images/personagens/francisca__sobre.jpg" alt="">
+                    <p class="personagens__sobre__francisca__content__text">Franziska é a filha mais velha de Peter e Charlotte Doppler. A jovem bailarina não é exatamente popular na escola, se tornando constante vítima de bullying por alguns de seus colegas. Por causa de sua atitude rebelde, chama atenção de Magnus, com quem começa um inesperado romance e acaba ajudando o rapaz na busca por seu irmão Mikkel.
+
+                        Oficialmente, Franziska é interpretada apenas por Gina Stiebitz. Porém, quando a versão adulta de Magnus é apresentada como membro do Sic Mundus, há uma mulher ao seu lado, que ao que tudo indica, se trata de sua amada. Essa figura misteriosa é interpretada por Carina Wiese.</p>
+                        
+                    </ul>
+            </section>
+            <section class="personagens__sobre__mikkel" id="mikkel">
+                <h1>mikkel Nielsen</h1>
+                <ul class="personagens__sobre__mikkel__content">
+                    
+                    <p class="personagens__sobre__francisca__content__text">Mikkel Nielsen é o filho mais novo de Ulrich e Katharina. O garoto vivia sua vida normalmente até se perder na caverna da cidade em 2019, que acabou levando-o para 1986. Lá, o garoto é adotado pela enfermeira Ines Kahnwald, que muda seu nome para “Michael” e o cria como se fosse seu filho. Ainda jovem ele se apaixona por Hannah, com quem se casa e tem Jonas. Já adulto, em 2019, ele comete suicídio meses antes de sua versão mirim se perder nas cavernas.
+
+                        Mikkel é vivido por Daan Lennard Liebrenz, enquanto Michael é interpretado por Sebastian Rudolph.</p>
+                        <img class="personagens__sobre__mikkel__content__img" src="./dist/images/personagens/mikkel__sobre.jpg" alt="">
+                    </ul>
+            </section>
+            <section class="personagens__sobre__helge" id="helge">
+                <h1>helge Doppler</h1>
+                <ul class="personagens__sobre__helge__content">
+                    <img class="personagens__sobre__helge__content__img" src="./dist/images/personagens/helge__sobre.jpg" alt="">
+                    <p class="personagens__sobre__francisca__content__text">Com uma infância marcada por abusos e violência nos anos 1950, o jovem Helge Doppler cresceu como alguém extremamente introspectivo e traumatizado. Quando chegou à vida adulta, ele se tornou braço direito do misterioso Noah e trabalhava raptando crianças que serviam como cobaias às experiências de viagem no tempo. Após uma vida de arrependimento causada pelas coisas horríveis que fez, já idoso ele tenta alertar que “acontecerá novamente”, se referindo ao desaparecimento de crianças em 2019. Mesmo sem ser ouvido, ele decide fazer algo a respeito e acaba causando efeitos não previstos.
+
+                        A versão infantil do personagem é vivida por Tom Philipp, enquanto Helge adulto é interpretado por Peter Schneider. Por fim, Hermann Beyer vive a versão idosa do personagem.</p>
+                        
+                    </ul>
+            </section>
+            <section class="personagens__sobre__claudia" id="claudia">
+                <h1>claudia TIEDEMANN</h1>
+                <ul class="personagens__sobre__claudia__content">
+                    
+                    <p class="personagens__sobre__francisca__content__text">Claudia Tiedemann é uma das peças chave de Dark. Se por um lado existem os Sic Mundus, viajantes do tempo que querem causar o apocalipse, do outro está Claudia e seus aliados, lutando para impedi-lo. Constantemente aparecendo como uma sábia idosa, ela direciona seus aliados - e até mesmo sua versão mais jovem - para cumprir papéis que minem as ações de seus rivais em uma desesperada tentativa de salvar o mundo. Filha de Egon e Doris, ela se torna mãe da introvertida Regina.
+
+                        A versão infantil de Claudia Tiedemann é interpretada por Gwendolyn Göbel, enquanto Julika Jenkins e Lisa Kreuzer vivem, respectivamente, suas versões adulta e idosa.</p>
+                        <img class="personagens__sobre__claudia__content__img" src="./dist/images/personagens/claudia__sobre.jpg" alt="">
+                    </ul>
+            </section>
+            <section class="personagens__sobre__elisabeth" id="elisabeth">
+                <h1>elisabeth doppler</h1>
+                <ul class="personagens__sobre__elisabeth__content">
+                    <img class="personagens__sobre__claudia__content__img" src="./dist/images/personagens/elisabeth__sobre.jpg" alt="">
+                    <p class="personagens__sobre__francisca__content__text">Elisabeth é a caçula dos Doppler. Muito esperta, a garota está sempre acompanhando sua irmã Franziska, mesmo que essa a considere inocente. Por causa da sua deficiência auditiva, ela se torna grande motivo de preocupação para seus pais após o surgimento de novos casos de crianças desaparecidas em Widen. Porém, ela é astuta e sabe se virar, o que se torna uma habilidade muito útil no futuro, quando assume a posição de líder de um grupo de sobreviventes do apocalipse em 2053.
+
+                        A jovem Elisabeth é interpretada por Carlotta von Falkenhayn, enquanto sua versão adulta é vivida por Sandra Borgmann.</p>
+                        
+                    </ul>
+            </section>
+    </section>
+    <section class="teorias" id="teorias">
+        <h1 class="teorias__title">Teorias</h1>
+        <ul class="teorias__content">
+            <li class="teorias__content__item">
+                <div class="teorias__content__item__name" data-faq-question>
+                    Teoria dos Ciclos Temporais
+                </div>
+                <div class="teorias__content__item__content">
+                    <p>Essa teoria sugere que a história de "Dark" se repete em ciclos intermináveis. Cada ciclo começa e termina da mesma maneira, com os eventos se repetindo, mas com pequenas variações a cada vez. Os personagens estão presos em um loop temporal, destinados a repetir suas ações indefinidamente.</p>
+                </div>
+            </li>
+            <li class="teorias__content__item">
+                <div class="teorias__content__item__name" data-faq-question>
+                    Teoria do Bootstrap Paradox
+                </div>
+                <div class="teorias__content__item__content">
+                    <p>Essa teoria sugere que a história de "Dark" se repete em ciclos intermináveis. Cada ciclo começa e termina da mesma maneira, com os eventos se repetindo, mas com pequenas variações a cada vez. Os personagens estão presos em um loop temporal, destinados a repetir suas ações indefinidamente.</p>
+                </div>
+            </li>
+            <li class="teorias__content__item">
+                <div class="teorias__content__item__name" data-faq-question>
+                    Teoria dos Mundos Paralelos
+                </div>
+                <div class="teorias__content__item__content">
+                    <p>Essa teoria sugere que a história de "Dark" se repete em ciclos intermináveis. Cada ciclo começa e termina da mesma maneira, com os eventos se repetindo, mas com pequenas variações a cada vez. Os personagens estão presos em um loop temporal, destinados a repetir suas ações indefinidamente.</p>
+                </div>
+            </li>
+            <li class="teorias__content__item">
+                <div class="teorias__content__item__name" data-faq-question>
+                    Teoria dos Antepassados e Descendentes
+                </div>
+                <div class="teorias__content__item__content">
+                    <p>Essa teoria sugere que a história de "Dark" se repete em ciclos intermináveis. Cada ciclo começa e termina da mesma maneira, com os eventos se repetindo, mas com pequenas variações a cada vez. Os personagens estão presos em um loop temporal, destinados a repetir suas ações indefinidamente.</p>
+                </div>
+            </li>
+            <li class="teorias__content__item">
+                <div class="teorias__content__item__name" data-faq-question>
+                    Teoria do Nó
+                </div>
+                <div class="teorias__content__item__content">
+                    <p>Essa teoria sugere que a história de "Dark" se repete em ciclos intermináveis. Cada ciclo começa e termina da mesma maneira, com os eventos se repetindo, mas com pequenas variações a cada vez. Os personagens estão presos em um loop temporal, destinados a repetir suas ações indefinidamente.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>
