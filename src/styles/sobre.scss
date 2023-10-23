@@ -22,7 +22,7 @@
             color: variaveis.$corPrincipal;
             font-size: 1.5em;
             letter-spacing: 5px;
-            // overflow: hidden;
+            overflow: hidden;
             // border-right: 0.15em solid rgb(255, 255, 255);
             // animation: escrever 2s steps(40, end);
 
@@ -81,6 +81,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
     .sobre {
+        
         &__container {
             grid-template-columns: 1fr; /* Altera para uma única coluna em telas menores */
             grid-gap: 10px;
