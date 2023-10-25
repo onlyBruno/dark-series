@@ -10,6 +10,7 @@
         letter-spacing: 5px;
         text-transform: uppercase;
         margin-bottom: 60px;
+        font-size: 1.8rem;
     }
     
 
@@ -333,7 +334,7 @@
 
 @media only screen and (max-width: 600px) and (orientation: portrait ) {
     .personagens {
-        padding: 2vw;
+        padding: 0;
 
         &__list {
             grid-template-columns: 1fr;
@@ -391,7 +392,7 @@
 
 
             &__text {
-                padding: 40px;
+                padding: 0;
                 
             }
         }
@@ -414,7 +415,7 @@
 
 
             &__text {
-                padding: 40px;
+                padding: 0;
                 
             }
         }
@@ -437,7 +438,7 @@
 
 
             &__text {
-                padding: 40px;
+                padding: 0;
                 
             }
         }
@@ -460,7 +461,7 @@
 
 
             &__text {
-                padding: 40px;
+                padding: 0;
                 
             }
         }
@@ -483,7 +484,7 @@
 
 
             &__text {
-                padding: 40px;
+                padding: 0;
                 
             }
         }
@@ -506,7 +507,7 @@
 
 
             &__text {
-                padding: 40px;
+                padding: 0;
                 
             }
         }
@@ -529,7 +530,7 @@
 
 
             &__text {
-                padding: 40px;
+                padding: 0;
                 
             }
         }
@@ -552,7 +553,7 @@
 
 
             &__text {
-                padding: 40px;
+                padding: 0;
                 
             }
         }
@@ -575,7 +576,7 @@
 
 
             &__text {
-                padding: 40px;
+                padding: 0;
                 
             }
         }
@@ -598,7 +599,7 @@
 
 
             &__text {
-                padding: 40px;
+                padding: 0;
                 
             }
         }
@@ -662,15 +663,13 @@
 
             &__img {
                 border-radius: 5px;
-                max-width: 500px;
                 width: 100%;
                 text-align: center;
             }
 
             &__text {
                 padding: 0;
-                margin-right: 40px;
-                padding-right: 40px;
+                text-align: justify;
                 line-height: 1.5;
             }
         }
@@ -688,7 +687,6 @@
 
             &__img {
                 border-radius: 5px;
-                max-width: 500px;
                 width: 100%;
                 text-align: center;
             }
@@ -696,8 +694,7 @@
 
             &__text {
                 padding: 0;
-                margin-right: 40px;
-                padding-right: 40px;
+                text-align: justify;
                 line-height: 1.5;
             }
         }
@@ -718,14 +715,12 @@
 
             &__img {
                 border-radius: 5px;
-                max-width: 500px;
             }
 
 
             &__text {
                 padding: 0;
-                margin-right: 40px;
-                padding-right: 40px;
+                text-align: justify;
                 line-height: 1.5;
             }
         }
@@ -746,14 +741,12 @@
 
             &__img {
                 border-radius: 5px;
-                max-width: 500px;
             }
 
 
             &__text {
                 padding: 0;
-                margin-right: 40px;
-                padding-right: 40px;
+                text-align: justify;
                 line-height: 1.5;
             }
         }
@@ -774,14 +767,12 @@
 
             &__img {
                 border-radius: 5px;
-                max-width: 500px;
             }
 
 
             &__text {
                 padding: 0;
-                margin-right: 40px;
-                padding-right: 40px;
+                text-align: justify;
                 line-height: 1.5;
             }
         }
@@ -802,14 +793,12 @@
 
             &__img {
                 border-radius: 5px;
-                max-width: 500px;
             }
 
 
             &__text {
                 padding: 0;
-                margin-right: 40px;
-                padding-right: 40px;
+                text-align: justify;
                 line-height: 1.5;
             }
         }
@@ -829,14 +818,12 @@
 
             &__img {
                 border-radius: 5px;
-                max-width: 500px;
             }
 
 
             &__text {
                 padding: 0;
-                margin-right: 40px;
-                padding-right: 40px;
+                text-align: justify;
                 line-height: 1.5;
             }
         }
@@ -856,14 +843,12 @@
 
             &__img {
                 border-radius: 5px;
-                max-width: 500px;
             }
 
 
             &__text {
                 padding: 0;
-                margin-right: 40px;
-                padding-right: 40px;
+                text-align: justify;
                 line-height: 1.5;;
             }
         }
@@ -884,14 +869,12 @@
 
             &__img {
                 border-radius: 5px;
-                max-width: 500px;
             }
 
 
             &__text {
                 padding: 0;
-                margin-right: 40px;
-                padding-right: 40px;
+                text-align: justify;
                 line-height: 1.5;
             }
         }
@@ -912,14 +895,12 @@
 
             &__img {
                 border-radius: 5px;
-                max-width: 500px;
             }
 
 
             &__text {
                 padding: 0;
-                margin-right: 40px;
-                padding-right: 40px;
+                text-align: justify;
                 line-height: 1.5;
             }
         }
